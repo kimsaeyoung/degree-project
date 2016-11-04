@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'ㅜNoto Sans', sans-serif;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:500px) {
+    .mainheader {
+        display: none !important;
+    }
+    .mainheader {
+        margin-bottom: 0 !important;
+    }
+}
+@media screen and (min-width:501px) {
+    .mHeader {
+        display: none !important;
+    }
+}
+.modal-header {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #5bc0de;
+}
+.mainheader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1175px;
+    height: 80px;
+    font-family: 'Exo 2', sans-serif;    
+    background-color: rgba(255,255,255,0.5);
+    border-bottom: 4px solid lightblue;
+    text-align: center;
+    z-index: 100;
+}
+.mainheader a {
+    color: black !important;
+}
+.mainheader a:hover {
+    color: black !important;
+    text-decoration: none !important;
+}
+.mainheader a:active {
+    text-decoration: none !important;
+}
+.mainheader a:visited {
+    text-decoration: none !important;
+}
+#inputArea {
+    margin-left: 15px;
+    width: 195px;
+}
+#hLeft {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+    min-width: 271px;
+}
+#hTitle {
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 20px;
+    height: 100%;
+    font-size: 25px;
+    line-height: 80px;
+}
+#hCenter {
+    margin: 0 auto;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+#hContent {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+#hContent li {
+    display: inline-block;
+    height: 100%;
+    width: 120px;
+    line-height: 80px;
+    font-size: 18px;
+    text-align: center;
+}
+#hContent li:nth-child(2) {
+    font-size: 25px;
+}
+#hContent li:hover .hLine {
+    width: 70px
+}
+#hContent li:nth-child(2):hover .hLine {
+    width: 70px
+}
+.hLine {
+    margin: 0 auto;
+    margin-top: -22px;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    -webkit-transition: .5s;
+    /* Safari */
+    transition: .5s;
+}
+#hRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    min-width: 291px;
+}
+#hIcon {
+    text-align: right;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+}
+#hIcon li {
+    display: inline-block;
+    margin: 0 5px;
+    height: 100%;
+    line-height: 80px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.container {
+    margin: 10px auto;
+    width: 1000px;
+    height: auto;
+}
+.slide_img {
+    display: inline-block;
+    width: 49%;
+    height: 273px;
+    /*border: 1px solid red;*/
+}
+.left_slide_img {
+    left: 0;
+}
+.right_slide_img {
+    float: right;
+}
+.service_flow {
+    margin: 10px auto;
+    width: 100%;
+    height: 200px;
+    border: 1px solid blue;
+}
+.service_info {
+    margin: 10px auto;
+    width: 100%;
+    height: 200px;
+    border: 1px solid blue;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    width: 1000px;
+    height: 90px;
+    background-color: #CCCCCC;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+.address {
+    width: 100%;
+    font-size: 20px;
+}
+.copyright {
+    width: 100%;
+    font-size: 20px;
+    text-align: right;
+}
+
+/* mobile css */
+
+.mHeader {
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+    background-color: lightblue;
+    text-align: center;
+    box-shadow: 0px 0px 5px 3px gray;
+    z-index: 9999;
+}
+.mHeader * {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    padding: 0;
+}
+#mMenu {
+    float: left;
+    width: 40px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+}
+#mMenuBox {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+    z-index: 9998;
+    display: none;
+}
+#mMenuBox .closeBtn {
+    text-align: right;
+}
+#mMenuBox a {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 25px;
+    color: white !important;
+    display: block;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+#mMenuBox a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+#mMenuBox a:active {
+    box-shadow: 0px 0px 5px 2px rgba(200, 200, 200, 0.5), inset 0px 0px 20px 10px rgba(200, 200, 200, 0.5);
+}
+#mTitle {
+    font-size: 20px;
+    height: 100%;
+    line-height: 40px;
+    color: white !important;
+}
+#mTitle:active {
+    color: white;
+}
+#mLogin {
+    float: right;
+    width: 40px;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 25px;
+}
+#mMenuBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9995;
+    display: none;
+    overflow: hidden;
+}

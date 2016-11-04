@@ -1,0 +1,33 @@
+/*리모콘 박스 css*/
+#box {
+  position: relative;
+  height: 50px;
+  width: 280px;
+  overflow: hidden;
+
+    border: 1px solid;
+}
+
+#box1 { position: absolute; }
+
+.top { top: 0px; }
+
+.bottom { bottom: 0px; }
+
+.left { left: 0px; }
+
+.right { right: 0px; }
+
+.content {
+    height: 170px;
+    width: 300px;
+    background-color: white;
+    opacity: 0.8;
+    font-size: 20px;
+    line-height: 200px;
+  
+    text-align: center;
+
+}
+
+.toLeft { float: left; }
